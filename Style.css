@@ -2191,3 +2191,32 @@ h1, h2, h3, h4, h5 {
     grid-template-columns: 1fr;
   }
 }
+
+@media(max-width:768px){
+
+  .navbar-inner{
+    padding:1rem;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:flex;
+  }
+
+  .welcome-grid,
+  .destinations-grid,
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+
+  .page-hero{
+    height:50vh;
+  }
+
+  .slide-content h2{
+    font-size:2rem;
+  }
+}
