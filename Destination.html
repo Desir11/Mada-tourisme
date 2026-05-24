@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Découvrez les 22 régions de Madagascar — paysages, cultures et aventures de chaque coin de la Grande Île." />
+  <title>Destinations — Mada Tourisme</title>
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="24" stroke="var(--gold)" stroke-width="1.5" fill="none"/>
+          <path d="M26 8 C28 12 31 14 31 18 C31 22 29 24 30 27 C31 30 33 31 33 35 C33 40 30 44 26 44 C22 44 19 40 19 35 C19 31 21 30 22 27 C23 24 21 22 21 18 C21 14 24 12 26 8Z" fill="var(--primary)" opacity="0.85"/>
+          <line x1="26" y1="42" x2="26" y2="30" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M26 30 C26 30 20 26 18 22" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M26 30 C26 30 32 26 34 22" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-main">MADA</span>
+          <span class="logo-sub">Tourisme</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="destinations.html" class="active">Destinations</a></li>
+        <li><a href="culture.html">Culture &amp; Artisanat</a></li>
+        <li><a href="nature.html">Nature &amp; Biodiversité</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Mode nuit">🌙</button>
+        <a href="contact.html" class="btn btn-primary">Réserver</a>
+        <button class="menu-toggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="mobile-menu">
+    <a href="index.html">Accueil</a>
+    <a href="destinations.html" class="active">Destinations</a>
+    <a href="culture.html">Culture &amp; Artisanat</a>
+    <a href="nature.html">Nature &amp; Biodiversité</a>
+    <a href="contact.html">Contact &amp; Réserver</a>
+    <button class="theme-toggle" style="margin-top:1rem;">🌙</button>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <header class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1920&q=85');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="script-text">Explorez</span>
+      <h1>Destinations</h1>
+      <p>22 régions, une île extraordinaire — chaque territoire de Madagascar révèle un visage unique et inoubliable.</p>
+    </div>
+  </header>
+
+  <!-- ======= REGIONS SECTION ======= -->
+  <section class="regions-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">La Grande Île</span>
+        <h2 class="section-title">Explorez Toutes les Régions</h2>
+        <p class="section-desc">Des Hautes Terres aux côtes paradisiaques, des forêts tropicales aux déserts du Sud.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="regions-filter reveal">
+        <button class="filter-btn active" data-filter="all">Toutes</button>
+        <button class="filter-btn" data-filter="nord">Nord</button>
+        <button class="filter-btn" data-filter="est">Est</button>
+        <button class="filter-btn" data-filter="hautes-terres">Hautes Terres</button>
+        <button class="filter-btn" data-filter="ouest">Ouest</button>
+        <button class="filter-btn" data-filter="sud">Sud</button>
+      </div>
+
+      <div class="regions-grid">
+
+        <!-- DIANA — Nosy Be -->
+        <article class="region-card reveal" data-region="nord" id="nosy-be">
+          <div class="region-img-wrap">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=80"
+                 alt="Nosy Be — île paradisiaque" class="region-img" loading="lazy" />
+            <span class="region-province-badge">Province d'Antsiranana</span>
+          </div>
+          <div class="region-body">
+            <h3 class="region-name">Nosy Be</h3>
+            <p class="region-location">📍 Nord-Ouest · Région DIANA</p>
+            <p class="region-desc">L'île parfumée de Madagascar, connue pour ses plages de sable blanc, ses eaux turquoise et ses plongées exceptionnelles. Flanquée d'une vingtaine d'îlots paradisiaques à explorer.</p>
+            <div class="region-highlights">
+              <span class="highlight-tag">🤿 Plongée</span>
+              <span class="highlight-tag">🏖️ Plage</span>
+              <span class="highlight-tag">🐋 Baleines</span>
+              <span class="highlight-tag">🌅 Ylang-ylang</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">Organiser ce voyage</a>
+          </div>
+        </article>
+
+        <!-- Montagne d'Ambre -->
+        <article class="region-card reveal reveal-delay-1" data-region="nord">
+          <div class="region-img-wrap">
+            <img src="https://ndaoitravel.com/wp-content/uploads/2017/12/EmiraldSea-CapAmbr-Corier21.jpg"
+                 alt="Montagne d'Ambre" class="region-img" loading="lazy" />
+            <span class="region-province-badge">Province d'Antsiranana</span>
+          </div>
+          <div class="region-body">
+            <h3 class="region-name">Montagne d'Ambre</h3>
+            <p class="region-location">📍 Extrême Nord · Région DIANA</p>
+            <p class="region-desc">Un paradis vert à l'extrémité nord de Madagascar. Ce parc national tropical abrite des cascades spectaculaires, des lacs de cratère et une faune exceptionnelle.</p>
+            <div class="region-highlights">
+              <span class="highlight-tag">🌿 Forêt tropicale</span>
+              <span class="highlight-tag">💧 Cascades</span>
+              <span class="highlight-tag">🦎 Caméléons</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">Organiser ce voyage</a>
+          </div>
+        </article>
+
+         <!-- MAHAJANGA -->
+        <article class="region-card reveal reveal-delay-1" data-region="nord">
+          <div class="region-img-wrap">
+            <img src="data:image/jpeg;base64,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"
+                 alt="Mahajanga" class="region-img" loading="lazy" />
+            <span class="region-province-badge">Province MAHAJANGA</span>
+          </div>
+          <div class="region-body">
+            <h3 class="region-name">MAHAJANGA (MAjunga)</h3>
+            <p class="region-location">📍 Nord-Ouest · Région Boeny</p>
+            <p class="region-desc">Baignée par le canal de Mozambique, Majunga charme avec ses plages ensoleillées, ses célèbres baobabs et son ambience chaleureuse entre culture Sakalava et influences cosmopolites. Entre coucher de soleil spectaculaires et promenades au bord de mer la ville offre une expérience tropicale unique.</p>
+            <div class="region-highlights">
+              <span class="highlight-tag">🌇 Couchers de soleil</span>
+              <span class="highlight-tag">🏖 Plages et bord de mer</span>
+              <span class="highlight-tag">🌳 Baobabs géants</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">Organiser ce voyage</a>
+          </div>
+        </article>
+
+        <!-- Antananarivo -->
+        <article class="region-card reveal reveal-delay-2" data-region="hautes-terres">
+          <div class="region-img-wrap">
+            <img src="https://progranit.mg/wp-content/uploads/2015/03/Rova-Manjakamiadana-Antananarivo.jpg"
+                 alt="Antananarivo capitale de Madagascar" class="region-img" loading="lazy" />
+            <span class="region-province-badge">Capitale</span>
+          </div>
+          <div class="region-body">
+            <h3 class="region-name">Antananarivo</h3>
+            <p class="region-location">📍 Hautes Terres Centrales</p>
+            <p class="region-desc">La capitale malgache sur sept collines. Un melting-pot de cultures, de marchés animés, de palais royaux et de gastronomie unique. Porte d'entrée de la Grande Île.</p>
+            <div class="region-highlights">
+              <span class="highlight-tag">🏰 Rova</span>
+              <span class="highlight-tag">🛍️ Marchés</span>
+              <span class="highlight-tag">🎭 Culture</span>
+              <span class="highlight-tag">🍽️ Gastronomie</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">Organiser ce voyage</a>
+          </div>
+        </article>
+
+        <!-- Ranomafana -->
+        <article class="region-card reveal" data-region="est">
+          <div class="region-img-wrap">
+            <img src="https://nws.ams3.cdn.digitaloceanspaces.com/content/5A33D1474A94741A998AA72B8C722C9B/1355-2048.webp"
+                 alt="Forêt de Ranomafana" class="region-img" loading="lazy" />
+            <span class="region-province-badge">Province de Fianarantsoa</span>
+          </div>
+          <div class="region-body">
+            <h3 class="region-name">Ranomafana</h3>
+            <p class="region-location">📍 Est · Région Haute Matsiatra</p>
+            <p class="region-desc">L'un des parcs nationaux les plus riches de Madagascar. Ses forêts denses cachent 12 espèces de lémuriens dont le rare Hapalemur doré, des grenouilles aux couleurs vives et des orchidées sauvages.</p>
+            <div class="region-highlights">
+              <span class="highlight-tag">🐒 Lémuriens</span>
+              <span class="highlight-tag">🌿 Orchidées</span>
+              <span class="highlight-tag">🐸 Grenouilles</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">Organiser ce voyage</a>
+          </div>
+        </article>
+
+        <!-- Tsingy de Bemaraha -->
+        <article class="region-card reveal reveal-delay-1" data-region="ouest" id="bemaraha">
+          <div class="region-img-wrap">
+            <img src="https://media.matoketours.nl/wordpress/full/iStock-516398469.jpg"
+                 alt="Tsingy de Bemaraha UNESCO" class="region-img" loading="lazy" />
+            <span class="region-province-badge">Patrimoine UNESCO</span>
+          </div>
+          <div class="region-body">
+            <h3 class="region-name">Tsingy de Bemaraha</h3>
+            <p class="region-location">📍 Ouest · Région Melaky</p>
+            <p class="region-desc">Un spectacle géologique unique au monde. Cette forêt de calcaire érigée en aiguilles pointues abrite des espèces animales et végétales qu'on ne trouve nulle part ailleurs sur Terre.</p>
+            <div class="region-highlights">
+              <span class="highlight-tag">🏔️ Géologie</span>
+              <span class="highlight-tag">🦎 Faune unique</span>
+              <span class="highlight-tag">🧗 Via ferrata</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">Organiser ce voyage</a>
+          </div>
+        </article>
+
+        <!-- Morondava & Baobabs -->
+        <article class="region-card reveal reveal-delay-2" data-region="ouest" id="morondava">
+          <div class="region-img-wrap">
+            <img src="https://afroculture.net/wp-content/uploads/2018/02/lall%C3%A9e-des-baobabs-madagascar.jpg"
+                 alt="Allée des Baobabs Morondava" class="region-img" loading="lazy" />
+            <span class="region-province-badge">Région Menabe</span>
+          </div>
+          <div class="region-body">
+            <h3 class="region-name">Morondava &amp; Baobabs</h3>
+            <p class="region-location">📍 Ouest · Région Menabe</p>
+            <p class="region-desc">La ville côtière qui donne accès à l'emblématique Allée des Baobabs. Ces géants vieux de 800 ans transforment le coucher du soleil en une œuvre d'art naturelle incomparable.</p>
+            <div class="region-highlights">
+              <span class="highlight-tag">🌳 Baobabs</span>
+              <span class="highlight-tag">🌅 Coucher de soleil</span>
+              <span class="highlight-tag">📸 Photographie</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">Organiser ce voyage</a>
+          </div>
+        </article>
+
+        <!-- Isalo -->
+        <article class="region-card reveal" data-region="sud">
+          <div class="region-img-wrap">
+            <img src="https://www.africansafaris.co.nz/wp-content/uploads/Isalo_National_Park-3.jpg"
+                 alt="Parc national de l'Isalo" class="region-img" loading="lazy" />
+            <span class="region-province-badge">Province de Toliara</span>
+          </div>
+          <div class="region-body">
+            <h3 class="region-name">Isalo &amp; Ranohira</h3>
+            <p class="region-location">📍 Sud · Région Ihorombe</p>
+            <p class="region-desc">Le "Grand Canyon malgache" — un parc aux canyons de grès rouge, aux piscines naturelles turquoise et aux forêts de palmiers. Un paradis pour les randonneurs et les amateurs de paysages grandioses.</p>
+            <div class="region-highlights">
+              <span class="highlight-tag">🏜️ Canyon</span>
+              <span class="highlight-tag">🏊 Piscines naturelles</span>
+              <span class="highlight-tag">🥾 Randonnée</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">Organiser ce voyage</a>
+          </div>
+        </article>
+
+        <!-- Fort Dauphin / Anosy -->
+        <article class="region-card reveal reveal-delay-1" data-region="sud">
+          <div class="region-img-wrap">
+            <img src="https://dadamanga.mg/wp-content/uploads/2022/04/FortDauphin-1536x864-1.jpg"
+                 alt="Fort Dauphin plage du Sud" class="region-img" loading="lazy" />
+            <span class="region-province-badge">Région Anosy</span>
+          </div>
+          <div class="region-body">
+            <h3 class="region-name">Fort-Dauphin (Tôlanaro)</h3>
+            <p class="region-location">📍 Sud-Est · Région Anosy</p>
+            <p class="region-desc">Encerclée par l'océan et les montagnes, Fort-Dauphin offre des lagons turquoise, des forêts littorales et la réserve naturelle d'Andohahela — la plus diverse de Madagascar.</p>
+            <div class="region-highlights">
+              <span class="highlight-tag">🌊 Lagons</span>
+              <span class="highlight-tag">🦕 Réserve Andohahela</span>
+              <span class="highlight-tag">🏔️ Montagnes</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">Organiser ce voyage</a>
+          </div>
+        </article>
+
+        <!-- Toamasina / Côte Est -->
+        <article class="region-card reveal reveal-delay-2" data-region="est">
+          <div class="region-img-wrap">
+            <img src="https://www.tamatavetsara.com/wp-content/uploads/2021/08/DJI_0676-260x250.jpg"
+                 alt="Côte Est de Madagascar" class="region-img" loading="lazy" />
+            <span class="region-province-badge">Province de Toamasina</span>
+          </div>
+          <div class="region-body">
+            <h3 class="region-name">Toamasina &amp; Côte Est</h3>
+            <p class="region-location">📍 Est · Région Atsinanana</p>
+            <p class="region-desc">Principal port de Madagascar et porte d'entrée vers le canal des Pangalanes — un réseau de lagunes et de canaux longeant 600 km de côte tropicale luxuriante à explorer en pirogue.</p>
+            <div class="region-highlights">
+              <span class="highlight-tag">⛵ Canal des Pangalanes</span>
+              <span class="highlight-tag">🌺 Flore tropicale</span>
+              <span class="highlight-tag">🐟 Pêche</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">Organiser ce voyage</a>
+          </div>
+        </article>
+
+           <!-- Ile Sainte-Marie -->
+        <article class="region-card reveal reveal-delay-2" data-region="est">
+          <div class="region-img-wrap">
+            <img src="https://www.booking-hotel-madagascar.com/wp-content/uploads/2017/12/sainte-marie-madagascar.jpg"
+                 alt="Côte Est de Madagascar" class="region-img" loading="lazy" />
+            <span class="region-province-badge">Région Analanjirofo</span>
+          </div>
+          <div class="region-body">
+            <h3 class="region-name">Nosy Boraha (L'ile Sainte-Marie) </h3>
+            <p class="region-location">📍 Est · Région Analanjirofo</p>
+            <p class="region-desc">Bordée par des plages paradisiaques et une mer cristalline, l'île Sainte-Marie séduit par ses cocotiers, sa beauté naturelle, ses criques sauvages et son ambiance paisible. Entre juillet et septembre, elle devient aussi l'un des meilleurs spots de Madagascar pour observer les baleines à bosse. </p>
+            <div class="region-highlights">
+              <span class="highlight-tag">🏖️ Plages paradisiaques</span>
+              <span class="highlight-tag">🐋 Observations de baleines</span>
+              <span class="highlight-tag">🌴 Nature tropicale</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">Organiser ce voyage</a>
+          </div>
+        </article>
+
+           <!-- Région ANDROY -->
+        <article class="region-card reveal reveal-delay-2" data-region="est">
+          <div class="region-img-wrap">
+            <img src="https://www.tracedirecte.com/media/original_images/lemurien-queue-blanche.jpg.1920x1200_q85_format-jpg_upscale.jpg"
+                 alt="Région Sud de Madagascar" class="region-img" loading="lazy" />
+            <span class="region-province-badge">Région ANDROY</span>
+          </div>
+          <div class="region-body">
+            <h3 class="region-name">ANDROY </h3>
+            <p class="region-location">📍 Sud · Région ANDROY</p>
+            <p class="region-desc">Au coeur du Grand Sud de Madagascar, ANDROY offre un paysage désertique unique, une culture Antandroy authentique et des traditions profondément enracinées. Entre cactus géants, baobabs et artisanat local? cette région offre une immersion dans l'un des territoires  les plus emblématiques de Madagascar. Elle abrite aussi plusieurs especes endémiques comme le SOKATRA et le Maky. </p>
+            <div class="region-highlights">
+              <span class="highlight-tag">🏜️ Paysage désertique</span>
+              <span class="highlight-tag">🥁 Culture ANTANDROY</span>
+              <span class="highlight-tag">🦘 Faune endémique</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-dark" style="font-size:0.85rem;padding:0.6rem 1.4rem;">Organiser ce voyage</a>
+          </div>
+        </article>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CTA ======= -->
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="container">
+      <div class="cta-content reveal">
+        <span class="section-label" style="color:var(--gold-lt);">Voyage sur mesure</span>
+        <h2>Créons Votre Itinéraire Idéal</h2>
+        <p>Combinez plusieurs régions pour une expérience Madagascar complète et inoubliable.</p>
+        <div class="cta-btns">
+          <a href="contact.html" class="btn btn-secondary">Contactez-nous →</a>
+          <a href="nature.html" class="btn btn-outline">Découvrir la nature</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg class="logo-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="26" cy="26" r="24" stroke="#C8A030" stroke-width="1.5" fill="none"/>
+              <path d="M26 8 C28 12 31 14 31 18 C31 22 29 24 30 27 C31 30 33 31 33 35 C33 40 30 44 26 44 C22 44 19 40 19 35 C19 31 21 30 22 27 C23 24 21 22 21 18 C21 14 24 12 26 8Z" fill="#2D8A58" opacity="0.9"/>
+              <line x1="26" y1="42" x2="26" y2="30" stroke="#C8A030" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M26 30 C26 30 20 26 18 22" stroke="#C8A030" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <path d="M26 30 C26 30 32 26 34 22" stroke="#C8A030" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            </svg>
+            <div class="logo-text">
+              <span class="logo-main">MADA</span>
+              <span class="logo-sub">Tourisme</span>
+            </div>
+          </a>
+          <p>Votre partenaire de voyage d'exception à Madagascar depuis 2010.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com/Désir Dazman" target="_blank" class="social-link">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a href="https://instagram.com/desir_dazman" target="_blank" class="social-link">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="https://wa.me/261381164942" target="_blank" class="social-link">
+<i class="fab fa-whatsapp"></i>
+</a>
+<a href="https://youtube.com/EdsirDazman" target="_blank" class="social-link">
+<i class="fab fa-youtube"></i>
+</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="#">Antananarivo</a></li>
+            <li><a href="#">Nosy Be</a></li>
+            <li><a href="#">Morondava</a></li>
+            <li><a href="#">Toliara &amp; Isalo</a></li>
+            <li><a href="#">Ranomafana</a></li>
+            <li><a href="#">Majunga</a></li>
+            <li><a href="#">Tamatave</a></li>
+            <li><a href="#">Sainte-Marie</a></li>
+            <li><a href="#">Tôlagnaro</a></li>
+            <li><a href="#">Androy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explorer</h4>
+          <ul>
+            <li><a href="nature.html">Faune &amp; Flore</a></li>
+            <li><a href="nature.html">Parcs Nationaux</a></li>
+            <li><a href="culture.html">Culture Malgache</a></li>
+            <li><a href="culture.html">Artisanat</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Nous contacter</a></li>
+            <li><a href="contact.html">Réserver</a></li>
+            <li><a href="contact.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Mada Tourisme. Tous droits réservés à Désir ANDRIAMIAKADAZA.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS.js"></script>
+</body>
+</html>

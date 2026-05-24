@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mada Tourisme — Découvrez la magie de Madagascar, l'île aux merveilles. Biodiversité unique, cultures riches, paysages extraordinaires." />
+  <title>Mada Tourisme — L'Île aux Merveilles</title>
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="JS.js"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo" aria-label="Mada Tourisme - Accueil">
+        <svg class="logo-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="26" cy="26" r="24" stroke="var(--gold)" stroke-width="1.5" fill="none"/>
+          <!-- Silhouette of Madagascar island -->
+          <path d="M26 8 C28 12 31 14 31 18 C31 22 29 24 30 27 C31 30 33 31 33 35 C33 40 30 44 26 44 C22 44 19 40 19 35 C19 31 21 30 22 27 C23 24 21 22 21 18 C21 14 24 12 26 8Z" fill="var(--primary)" opacity="0.85"/>
+          <!-- Baobab tree silhouette overlay -->
+          <line x1="26" y1="42" x2="26" y2="30" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M26 30 C26 30 20 26 18 22" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M26 30 C26 30 32 26 34 22" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M26 30 C26 30 22 27 20 24" stroke="var(--gold)" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+          <path d="M26 30 C26 30 30 27 32 24" stroke="var(--gold)" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+          <!-- Stars -->
+          <circle cx="14" cy="14" r="1.2" fill="var(--gold)" opacity="0.6"/>
+          <circle cx="38" cy="12" r="0.9" fill="var(--gold)" opacity="0.5"/>
+          <circle cx="40" cy="36" r="1.1" fill="var(--gold)" opacity="0.55"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-main">MADA</span>
+          <span class="logo-sub">Tourisme</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="Destination.html">Destinations</a></li>
+        <li><a href="Culture.html">Culture &amp; Artisanat</a></li>
+        <li><a href="Nature.html">Nature &amp; Biodiversité</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Mode nuit">🌙</button>
+        <a href="Contact.html" class="btn btn-primary">Réserver</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= MOBILE MENU ======= -->
+  <nav class="mobile-menu" aria-label="Menu mobile">
+    <a href="index.html" class="active">Accueil</a>
+    <a href="Destination.html">Destinations</a>
+    <a href="Culture.html">Culture &amp; Artisanat</a>
+    <a href="Nature.html">Nature &amp; Biodiversité</a>
+    <a href="Contact.html">Contact &amp; Réserver</a>
+    <button class="theme-toggle" style="margin-top:1rem;">🌙</button>
+  </nav>
+
+  <!-- ======= SLIDESHOW HERO ======= -->
+  <section class="slideshow-hero" aria-label="Diaporama biodiversité Madagascar">
+
+    <!-- Slide 1 — Allée des Baobabs -->
+    <div class="slide active" style="background-image:url('https://img-4.linternaute.com/a4dkykb8qFD7KWWu5PcNHCUigUo=/1240x/smart/541c1fe8cf534e9ebec7113f7d32dd46/ccmcms-linternaute/13413499.jpg');" role="img" aria-label="Allée des Baobabs, Morondava">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-label">Merveille Naturelle</span>
+        <h2>L'Allée des Baobabs</h2>
+        <p>Des arbres millénaires qui défient le temps dans la plaine de Morondava — un spectacle inoubliable au coucher du soleil.</p>
+        <a href="nature.html" class="btn btn-outline slide-btn">Explorer la Nature →</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 — Lémur -->
+    <div class="slide" style="background-image:url('https://www.evasion-aisne.com/upload/quel-est-le-nom-du-lemurien-dans-madagascar.webp');" role="img" aria-label="Lémur à queue annelée, endémique de Madagascar">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-label">Faune Endémique</span>
+        <h2>Royaume des Lémuriens</h2>
+        <p>Plus de 110 espèces de lémuriens, tous endémiques à Madagascar — la plus grande diversité de primates au monde.</p>
+        <a href="nature.html" class="btn btn-outline slide-btn">Découvrir la Faune →</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 — Plage Nosy Be -->
+    <div class="slide" style="background-image:url('https://www.madagascar-sur-mesure.com/uploads/sites/67/2022/12/madagascar-nosy-be.jpeg');" role="img" aria-label="Plages paradisiaques de Nosy Be">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-label">Côtes Paradisiaques</span>
+        <h2>Nosy Be &amp; les Îles</h2>
+        <p>Des plages de sable blanc, des eaux turquoise et des récifs coralliens d'une richesse exceptionnelle.</p>
+        <a href="Destination.html" class="btn btn-outline slide-btn">Voir les Destinations →</a>
+      </div>
+    </div>
+
+    <!-- Slide 4 — Caméléon -->
+    <div class="slide" style="background-image:url('https://live.staticflickr.com/1659/24097150384_056e4fe7c8_b.jpg');" role="img" aria-label="Caméléon de Madagascar">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-label">Biodiversité Unique</span>
+        <h2>L'Île aux Caméléons</h2>
+        <p>Madagascar abrite la moitié des espèces de caméléons au monde, des créatures fascinantes aux couleurs éblouissantes.</p>
+        <a href="nature.html" class="btn btn-outline slide-btn">Explorer la Biodiversité →</a>
+      </div>
+    </div>
+
+    <!-- Slide 5 — Tsingy -->
+    <div class="slide" style="background-image:url('https://jenmansafaris.com/wp-content/uploads/2019/06/tsingy.webp');" role="img" aria-label="Tsingy de Bemaraha">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-label">Patrimoine UNESCO</span>
+        <h2>Les Tsingy de Bemaraha</h2>
+        <p>Un paysage de calcaire sculpt en aiguilles verticales — l'une des formations géologiques les plus spectaculaires du monde.</p>
+        <a href="Destination.html" class="btn btn-outline slide-btn">Voir le Patrimoine →</a>
+      </div>
+    </div>
+
+    <!-- Slide 6 — Forêt tropicale -->
+    <div class="slide" style="background-image:url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTq6C-wDootVFJkS6TgbduUWe1ObvFRIY8YLOiZ9-VYF66K3lCR');" role="img" aria-label="Forêt tropicale humide de l'est malgache">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-label">Forêts Primaires</span>
+        <h2>Jungles Mystérieuses</h2>
+        <p>Les forêts humides de l'Est malgache cachent des trésors botaniques et faunistiques découverts chaque année par la science.</p>
+        <a href="nature.html" class="btn btn-outline slide-btn">Explorer les Forêts →</a>
+      </div>
+    </div>
+
+    <!-- Arrows -->
+    <button class="slide-arrow prev" aria-label="Diapositive précédente">&#8592;</button>
+    <button class="slide-arrow next" aria-label="Diapositive suivante">&#8594;</button>
+
+    <!-- Dots -->
+    <div class="slideshow-controls" role="tablist" aria-label="Sélectionner une diapositive">
+      <button class="slide-dot active" role="tab" aria-label="Diapositive 1" aria-selected="true"></button>
+      <button class="slide-dot" role="tab" aria-label="Diapositive 2"></button>
+      <button class="slide-dot" role="tab" aria-label="Diapositive 3"></button>
+      <button class="slide-dot" role="tab" aria-label="Diapositive 4"></button>
+      <button class="slide-dot" role="tab" aria-label="Diapositive 5"></button>
+      <button class="slide-dot" role="tab" aria-label="Diapositive 6"></button>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======= WELCOME SECTION ======= -->
+  <section class="welcome-section" aria-labelledby="welcome-title">
+    <div class="container">
+      <div class="welcome-grid">
+        <div class="welcome-visual reveal">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Nepenthes2.jpg/330px-Nepenthes2.jpg"
+               alt="Nepenthes, Madagascar"
+               class="welcome-img-main" loading="lazy" />
+          <img src="https://madagascar-tourisme.com/wp-content/uploads/2017/04/34584703191_79c096a7ea_k-e1496325406191.jpg"
+               alt="Lémurien dans la forêt" class="welcome-img-accent" loading="lazy" />
+          <div class="welcome-badge">
+            <strong>8e</strong>
+            <span>Continent</span>
+          </div>
+        </div>
+
+        <div class="welcome-text reveal reveal-delay-2">
+          <div class="section-header">
+            <span class="script-text">Bienvenue à</span>
+            <h2 class="section-title" id="welcome-title">Madagascar,<br>l'Île aux Merveilles</h2>
+          </div>
+          <p style="color:var(--text-muted);line-height:1.8;margin-bottom:1rem;">
+            Isolée de l'Afrique depuis 165 millions d'années, Madagascar est une planète à part entière. 
+            Ses paysages varient des déserts du Sud aux forêts tropicales humides de l'Est, 
+            en passant par les Hautes Terres centrales et les mangroves de l'Ouest.
+          </p>
+          <p style="color:var(--text-muted);line-height:1.8;margin-bottom:2rem;">
+            Avec <strong style="color:var(--primary);">90% d'espèces endémiques</strong>, la Grande Île 
+            offre des expériences naturelles et culturelles impossibles à vivre ailleurs sur Terre.
+          </p>
+
+          <div class="welcome-features">
+            <div class="feature-item">
+              <div class="feature-icon">🦎</div>
+              <div>
+                <h4>Biodiversité unique</h4>
+                <p>5% de la biodiversité mondiale sur 0,4% des terres</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🌴</div>
+              <div>
+                <h4>Paysages variés</h4>
+                <p>Déserts, forêts, plages, montagnes, grottes</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🎭</div>
+              <div>
+                <h4>Culture vivante</h4>
+                <p>18 ethnies, traditions millénaires et artisanat</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🏖️</div>
+              <div>
+                <h4>Côtes idylliques</h4>
+                <p>5 400 km de littoral avec des plages vierges</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="Destination.html" class="btn btn-primary" style="font-size:1rem;">
+            Découvrir les Destinations →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= STATS BAND ======= -->
+  <section class="stats-band" aria-label="Chiffres clés de Madagascar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <strong class="count-up" data-target="110" data-suffix="+">0</strong>
+          <span>Espèces de lémuriens</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <strong class="count-up" data-target="50" data-suffix="+">0</strong>
+          <span>Espèces de caméléons</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <strong class="count-up" data-target="5400">0</strong>
+          <span>Km de littoral</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <strong class="count-up" data-target="22">0</strong>
+          <span>Régions à explorer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= DESTINATIONS PREVIEW ======= -->
+  <section class="destinations-preview" aria-labelledby="dest-preview-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Explorer Madagascar</span>
+        <h2 class="section-title" id="dest-preview-title">Nos Destinations Phares</h2>
+        <p class="section-desc">Des paysages extraordinaires à chaque coin de l'île — choisissez votre aventure.</p>
+      </div>
+
+      <div class="destinations-grid">
+        <!-- Card 1 -->
+        <article class="dest-card reveal">
+          <div class="dest-card-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Opf_CedOWRocaVgYy5MbQlzeBi7n-L9T1A&s"
+                 alt="Tsingy de Bemaraha" loading="lazy" />
+            <span class="dest-card-tag">Patrimoine UNESCO</span>
+          </div>
+          <div class="dest-card-body">
+            <h3>Tsingy de Bemaraha</h3>
+            <p>Un labyrinthe de forêts calcaires en aiguilles, abritant une faune et une flore entièrement uniques, accessible qu'aux plus intrépides.</p>
+            <div class="dest-card-footer">
+              <div class="dest-highlights">
+                <span class="dest-tag">Randonnée</span>
+                <span class="dest-tag">Géologie</span>
+                <span class="dest-tag">Faune</span>
+              </div>
+              <a href="Destination.html#bemaraha" class="dest-link">Explorer →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="dest-card reveal reveal-delay-1">
+          <div class="dest-card-img">
+            <img src="https://nosybe-tourisme.com/wp-content/uploads/2017/09/34671170666_28b9b2259a_k.jpg"
+                 alt="Nosy Be plage paradisiaque" loading="lazy" />
+            <span class="dest-card-tag">Île</span>
+          </div>
+          <div class="dest-card-body">
+            <h3>Nosy Be</h3>
+            <p>L'île parfumée au nord-ouest, célèbre pour ses eaux cristallines, ses plongées inoubliables et ses couchers de soleil flamboyants.</p>
+            <div class="dest-card-footer">
+              <div class="dest-highlights">
+                <span class="dest-tag">Plongée</span>
+                <span class="dest-tag">Plage</span>
+                <span class="dest-tag">Détente</span>
+              </div>
+              <a href="Destination.html" class="dest-link">Explorer →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="dest-card reveal reveal-delay-2">
+          <div class="dest-card-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZu0utiwrtrr98eI3KX2b2Ij0Id-PUg0fsw&s"
+                 alt="Allée des Baobabs Morondava" loading="lazy" />
+            <span class="dest-card-tag">Icône</span>
+          </div>
+          <div class="dest-card-body">
+            <h3>Allée des Baobabs</h3>
+            <p>L'image emblématique de Madagascar — une avenue de baobabs géants qui illumine les couchers de soleil dans la région de Morondava.</p>
+            <div class="dest-card-footer">
+              <div class="dest-highlights">
+                <span class="dest-tag">Nature</span>
+                <span class="dest-tag">Photo</span>
+                <span class="dest-tag">Coucher soleil</span>
+              </div>
+              <a href="Destination.html#morondava" class="dest-link">Explorer →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:3rem;" class="reveal">
+        <a href="Destination.html" class="btn btn-outline-dark">Voir toutes les destinations →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= BIODIVERSITY MOSAIC ======= -->
+  <section class="bio-section" aria-labelledby="bio-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">5% de la biodiversité mondiale</span>
+        <h2 class="section-title" id="bio-title">Un Paradis de la Biodiversité</h2>
+        <p class="section-desc">Madagascar est l'un des points chauds de biodiversité les plus importants de la planète.</p>
+      </div>
+
+      <div class="bio-mosaic reveal">
+        <div class="bio-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCmP01YOQdhsQqE1T9YZxMmR6oZIu6P7cVNg&s"
+               alt="Lémur à queue annelée" loading="lazy" />
+          <div class="bio-caption">🐒 Lémur à queue annelée — Endémique de Madagascar</div>
+        </div>
+        <div class="bio-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb0N63ypyg6dcGASwdtP4OKHeQR3FWxscnoA&s"
+               alt="Caméléon de Madagascar" loading="lazy" />
+          <div class="bio-caption">🦎 Caméléon de Parson</div>
+        </div>
+        <div class="bio-item">
+          <img src="https://www.madagascar-island.com/wp-content/uploads/2011/01/faune-foret-pluviale.jpg"
+               alt="Forêt tropicale" loading="lazy" />
+          <div class="bio-caption">🌿 Forêt tropicale humide</div>
+        </div>
+        <div class="bio-item">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/a3/c9/16/img-20180829-104200718.jpg?w=1000&h=800&s=1"
+               alt="cascade de madagascar" loading="lazy" />
+          <div class="bio-caption">💧 Cascade de Madagascar</div>
+        </div>
+        <div class="bio-item">
+          <img src="https://pouvoirsafrique.com//uploads/imported_images/uploads/2023/01/1200px-Recif.jpg"
+               alt="Plage idyllique" loading="lazy" />
+          <div class="bio-caption">🐠 Récifs coralliens</div>
+        </div>
+        <div class="bio-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVxQjVLttqgLrFOhzr5y76VOPWNM0YjX4InQ&s"
+               alt="Parc national d'Isalo" loading="lazy" />
+          <div class="bio-caption">🏔️ Montagne d'Isalo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TESTIMONIALS ======= -->
+  <section class="testimonials" aria-labelledby="testi-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Ils ont voyagé avec nous</span>
+        <h2 class="section-title" id="testi-title">Avis de nos Voyageurs</h2>
+      </div>
+
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-quote">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Un voyage hors du temps. Les baobabs au coucher du soleil, les lémuriens qui sautent d'arbre en arbre, les habitants si accueillants... Madagascar a changé ma vision du monde.</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+                 alt="Thomas D." class="testi-avatar" loading="lazy" />
+            <div>
+              <div class="testi-name">Thomas Dubois</div>
+              <div class="testi-origin">🇫🇷 France</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal reveal-delay-1">
+          <div class="testi-quote">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Notre guide connaissait chaque sentier, chaque oiseau, chaque plante. Le Parc de l'Isalo était époustouflant. Je recommande Mada Tourisme sans réserve à tous les amoureux de la nature.</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80"
+                 alt="Elena R." class="testi-avatar" loading="lazy" />
+            <div>
+              <div class="testi-name">Elena Russo</div>
+              <div class="testi-origin">🇮🇹 Italie</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal reveal-delay-2">
+          <div class="testi-quote">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Trois semaines entre la Route du Sud, Nosy Be et les forêts de l'Est. Une organisation parfaite, des lodges magnifiques et des expériences inoubliables. Je reviendrai!</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80"
+                 alt="James K." class="testi-avatar" loading="lazy" />
+            <div>
+              <div class="testi-name">James Kowalski</div>
+              <div class="testi-origin">🇩🇪 Allemagne</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CTA SECTION ======= -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="cta-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="cta-content reveal">
+        <span class="section-label" style="color:var(--gold-lt);">Votre aventure commence ici</span>
+        <h2 id="cta-title">Prêt à Découvrir<br>la Magie Malgache?</h2>
+        <p>Contactez nos experts pour concevoir votre voyage sur mesure à Madagascar.</p>
+        <div class="cta-btns">
+          <a href="Contact.html" class="btn btn-secondary">Planifier mon voyage →</a>
+          <a href="Destination.html" class="btn btn-outline">Voir les destinations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer" aria-label="Pied de page">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Mada Tourisme">
+            <svg class="logo-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="26" cy="26" r="24" stroke="#C8A030" stroke-width="1.5" fill="none"/>
+              <path d="M26 8 C28 12 31 14 31 18 C31 22 29 24 30 27 C31 30 33 31 33 35 C33 40 30 44 26 44 C22 44 19 40 19 35 C19 31 21 30 22 27 C23 24 21 22 21 18 C21 14 24 12 26 8Z" fill="#2D8A58" opacity="0.9"/>
+              <line x1="26" y1="42" x2="26" y2="30" stroke="#C8A030" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M26 30 C26 30 20 26 18 22" stroke="#C8A030" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <path d="M26 30 C26 30 32 26 34 22" stroke="#C8A030" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            </svg>
+            <div class="logo-text">
+              <span class="logo-main">MADA</span>
+              <span class="logo-sub">Tourisme</span>
+            </div>
+          </a>
+          <p>Votre partenaire de voyage d'exception à Madagascar depuis 2010. Nous créons des expériences authentiques et inoubliables.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com/Désir Dazman" target="_blank" class="social-link">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a href="https://instagram.com/desir_dazman" target="_blank" class="social-link">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="https://wa.me/261381164942" target="_blank" class="social-link">
+<i class="fab fa-whatsapp"></i>
+</a>
+<a href="https://youtube.com/EdsirDazman" target="_blank" class="social-link">
+<i class="fab fa-youtube"></i>
+</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="Destination.html">Antananarivo</a></li>
+            <li><a href="Destination.html">Nosy Be</a></li>
+            <li><a href="Destination.html">Morondava</a></li>
+            <li><a href="Destination.html">Toliara &amp; Isalo</a></li>
+            <li><a href="Destination.html">Ranomafana</a></li>
+            <li><a href="#">Majunga</a></li>
+            <li><a href="#">Tamatave</a></li>
+            <li><a href="#">Sainte-Marie</a></li>
+            <li><a href="#">Tôlagnaro</a></li>
+            <li><a href="#">Androy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explorer</h4>
+          <ul>
+            <li><a href="nature.html">Faune &amp; Flore</a></li>
+            <li><a href="nature.html">Parcs Nationaux</a></li>
+            <li><a href="culture.html">Culture Malgache</a></li>
+            <li><a href="culture.html">Artisanat</a></li>
+            <li><a href="culture.html">Gastronomie</a></li>
+            <li><a href="culture.html">Festivals</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Infos</h4>
+          <ul>
+            <li><a href="Contact.html">Nous Contacter</a></li>
+            <li><a href="Contact.html">Réserver un voyage</a></li>
+            <li><a href="Contact.html#faq">FAQ</a></li>
+            <li><a href="#">Visa &amp; Formalités</a></li>
+            <li><a href="#">Guide pratique</a></li>
+            <li><a href="#">Assurance voyage</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; © 2026 Mada Tourisme. Tous droits réservés à Désir ANDRIAMIAKADAZA.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS.js"></script>
+</body>
+</html>
